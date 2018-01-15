@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/room_row_height"
+    android:orientation="horizontal"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_vertical_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_gravity="center"
+    android:gravity="center_vertical|left">
+
+    <RelativeLayout
+        android:layout_height="@dimen/preview_pic_height"
+        android:layout_width="@dimen/preview_pic_width">
+
+        <ImageView
+            android:id="@+id/room_row_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            app:srcCompat="@drawable/ic_home_black_24dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/room_row_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceSearchResultTitle"
+
+
+            android:text="Testing"/>
+
+        <TextView
+            android:id="@+id/room_row_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:maxLines="3"
+            android:textAppearance="?attr/textAppearanceListItemSecondary"
+
+            android:text="- fantastic view, bus station, etc." />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:minWidth="@dimen/short_text_width"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/room_row_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darker_grey"
+            android:text="$800" />
+    </RelativeLayout>
+
+</LinearLayout>

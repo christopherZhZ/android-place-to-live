@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "786234692729",
+    "firebase_url": "https://placetoliveandroid.firebaseio.com",
+    "project_id": "placetoliveandroid",
+    "storage_bucket": "placetoliveandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786234692729:android:032730c7ba277c44",
+        "android_client_info": {
+          "package_name": "com.christopherzhz.placetoliveapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "786234692729-9iqicu5esclrvc3kjvhjr6um4lgl0b49.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyGrGl32drVaC3cnoWJ-88onPV9i6L2go"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

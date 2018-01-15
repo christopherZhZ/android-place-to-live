@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/activity_horizontal_margin"
+    android:paddingVertical="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.christopherzhz.placetoliveapp.ui.activities.UploadRoomActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/upload_back_button"
+            android:layout_width="@dimen/back_button_width"
+            android:layout_height="@dimen/back_button_height"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_back" />
+
+        <ImageButton
+            android:id="@+id/upload_post_button"
+            android:layout_width="@dimen/back_button_width"
+            android:layout_height="@dimen/back_button_height"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_post" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/upload_page_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_text_height"
+        android:gravity="center_horizontal"
+        android:text="@string/title_upload_room_page"
+        android:textColor="@color/light_grey" />
+
+    <View style="@style/LineDivider" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:textColorHint="@color/darker_grey">
+
+        <EditText
+            android:id="@+id/upload_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:focusedByDefault="true"
+            android:fontFamily="serif"
+            android:hint="@string/prompt_room_title"
+            android:maxLines="2"
+            android:nextFocusLeft="@color/black" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <View style="@style/LineDivider" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/darker_grey"
+        android:layout_marginTop="-10dp"
+        >
+
+        <EditText
+            android:id="@+id/upload_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif"
+            android:gravity="top"
+            android:hint="@string/prompt_room_detail"
+            android:lines="8"
+            android:maxLines="15"
+            android:nextFocusLeft="@color/black"
+            android:textSize="14sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <View style="@style/LineDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/upload_image_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/small_text_height"
+            android:text="@string/prompt_room_picture"
+            android:textColor="@color/grey" />
+
+        <ImageButton
+            android:id="@+id/upload_image_button"
+            android:layout_width="@dimen/preview_pic_width"
+            android:layout_height="@dimen/preview_pic_height"
+            android:layout_marginTop="@dimen/appbar_padding_top"
+            android:background="@drawable/ic_upload_pic" />
+    </LinearLayout>
+
+    <View style="@style/LineDivider" />
+
+    <TextView
+        android:id="@+id/upload_price_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/small_text_height"
+        android:text="@string/prompt_room_price"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/acme"
+            android:text="  $"
+            android:textColor="@color/darker_grey"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/upload_price_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="/ month"
+            android:textSize="18sp"
+            android:textColor="@color/darker_grey"/>
+    </LinearLayout>
+
+
+</LinearLayout>

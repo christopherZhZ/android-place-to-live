@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Place2Live</string>
+    <string name="title_upload_room_page">Post a Room for Renting</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_confirm_password">Confirm password</string>
+    <string name="prompt_username">User name</string>
+    <string name="prompt_room_title">Start your post with a fancy title</string>
+    <string name="prompt_room_detail">You may want to add more details...</string>
+    <string name="prompt_room_picture">Add at least one photo of your room</string>
+    <string name="prompt_room_price">How much rent you expect to charge?</string>
+    <string name="prompt_room_location">Enter the address of this place</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="action_post">Post</string>
+    <string name="process_signing_in">Signing in...</string>
+    <string name="success_registered">You have successfully registered!</string>
+    <string name="error_invalid_email">Invalid email</string>
+    <string name="error_used_email">This email is in use by another account</string>
+    <string name="error_invalid_password">Password too weak</string>
+    <string name="error_confirm_password_not_match">Password not match</string>
+    <string name="error_wrong_email">Incorrect email address</string>
+    <string name="error_wrong_password">Incorrect password</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="tab_home">Home</string>
+    <string name="tab_map_view">Map</string>
+    <string name="tab_account">Account</string>
+</resources>
