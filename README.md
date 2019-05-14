@@ -3,8 +3,6 @@
 
 Place2Live is an Android application for college students to easily find a room to rent, or find an tenent/roommate.
 
-The application is currently on building.
-
 ----
 ### Introduction
 
